@@ -32,7 +32,7 @@ for tag in soup.find_all('script', src=True):
         new_script.string = file_text
         soup.html.body.append(new_script)
 
-# Find image tags.
+# Find image tags. example: <img src="images/img1.png">
 for tag in soup.find_all('img', src=True):
     if tag.has_attr('src'):
         file_content = Path(tag['src']).read_bytes()
