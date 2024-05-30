@@ -17,7 +17,7 @@ For this directory tree:
 ```
 root-folder
 ├── index.html
-├── build_dist.py
+├── single_html.py
 ├── js
 │   └── somescript.js
 ├── css
@@ -32,7 +32,7 @@ root-folder
 From `root-folder` run:
 
 ```
-python build_dist.py
+python single_html.py
 ```
 
 And a standalone `oneindex.html` file will be created in the dist folder.
